@@ -6,11 +6,7 @@ services:
     image: example/test-manager
     ports:
       - 8080
-    links:
-      - service
 
   service:
     build: ./test-service
-    image: example/test-service
-    ports:
-      - 8080                  
+    image: example/test-service 
